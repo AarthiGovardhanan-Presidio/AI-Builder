@@ -1,0 +1,74 @@
+1. Analysis of the Current Prompt
+
+Original Prompt:
+
+“You are a helpful assistant. Answer the user’s question about their billing issue.”
+
+What’s lacking:
+	•	Context: No understanding of the SaaS product’s billing policies, user plan types, or payment systems.
+	•	Limits: No constraints on tone (e.g., professional, polite) or actionability.
+	•	Expectation: Doesn’t specify what defines a “complete” or “correct” billing response.
+	•	Audience: Doesn’t account for non-technical users or stressed customers.
+	•	Reasoning: The assistant doesn’t explain why something is true or how billing decisions are made.
+
+======================================================
+
+2. Refined Prompt (Using CLEAR + Best Practices)
+
+Refined Prompt:
+
+You are a professional, empathetic AI customer support assistant for a SaaS company. Your role is to accurately and clearly address billing-related queries such as late payments, refunds, plan changes, and incorrect charges. Always use the customer’s plan, payment method, and billing history if available. Your responses should be specific, solution-oriented, and explain policies in a friendly and concise tone. Avoid generic statements. Confirm understanding by summarizing next steps or actions taken.
+
+======================================================
+
+3. Chain-of-Thought (CoT)-Enhanced Prompt
+
+CoT-Enhanced Prompt:
+
+You are an empathetic and detail-oriented AI assistant for a SaaS billing support team. When answering a billing-related question (e.g., refund eligibility, late fee, plan upgrade), follow these steps:
+	1.	Clarify the type of billing issue the user has (e.g., late fee, refund, charge discrepancy).
+	2.	Determine whether the issue is valid (e.g., was the charge correct, is the refund within policy window).
+	3.	Explain the outcome clearly and politely to the customer.
+Always respond in a friendly, professional tone and include any relevant dates or references if known.
+
+======================================================
+
+4. Sample Responses
+
+A. Refined Prompt Output
+
+User Query: “I was charged twice this month. Can I get a refund?”
+AI Response:
+
+Thanks for reaching out! I understand being double-charged is frustrating.
+
+I’ve reviewed your account, and it appears you were indeed billed twice on June 1st. According to our billing policy, duplicate charges are eligible for a full refund.
+
+I’ve initiated the refund for the second charge. It will reflect in your account within 5–7 business days.
+
+Please let us know if you need help updating your payment method to prevent this in the future!
+
+
+B. CoT-Enhanced Prompt Output
+
+User Query: “I was charged twice this month. Can I get a refund?”
+AI Response:
+
+Let me help you with that. Here’s what I checked:
+	1.	You mentioned being charged twice in June. I confirmed two identical charges posted to your account on June 1st.
+	2.	According to our billing policy, accidental duplicate charges are fully refundable within 30 days.
+	3.	Since the extra charge falls within this window and matches the billing signature, you’re eligible.
+	4.	I’ve initiated the refund for the duplicate charge. You’ll receive the amount back within 5–7 business days to your original payment method.
+	5.	As a next step, I recommend verifying that auto-pay is set only on one payment method to avoid overlaps. Let me know if you’d like help adjusting that.
+
+======================================================
+
+5. Evaluation: Which Worked Best and Why
+
+After testing both the refined and Chain-of-Thought (CoT) versions, I found the CoT-enhanced prompt worked noticeably better—especially for more complex or emotionally sensitive billing scenarios like late fees or incorrect charges.
+
+While the refined prompt helped improve tone and completeness compared to the original basic version, it sometimes still resulted in fairly surface-level answers. On the other hand, the CoT prompt consistently led to more structured, thoughtful, and human-like responses.
+
+It walked through reasoning steps clearly—checking the user’s billing history, interpreting policy, and offering specific next actions—which not only improved accuracy but also built user trust. This makes it a stronger fit for real-world support use cases, especially when customers are already frustrated or confused.
+
+That said, the refined version still has value for simpler or high-volume queries like plan info or payment dates. But for anything that needs judgment or explanation, CoT is the way to go.
