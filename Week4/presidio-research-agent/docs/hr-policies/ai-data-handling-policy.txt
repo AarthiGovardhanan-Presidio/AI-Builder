@@ -1,0 +1,29 @@
+Presidio AI Data Handling Policy
+
+1. Data Privacy and Consent
+- All AI systems must obtain explicit user consent before data collection
+- Personal data must be anonymized and encrypted
+- Data retention limited to 30 days unless explicitly approved
+
+2. Ethical AI Usage
+- AI systems must be designed with fairness and non-discrimination principles
+- Regular bias audits are mandatory
+- Transparency in AI decision-making processes is required
+
+3. Compliance Requirements
+- Adhere to GDPR, CCPA, and other relevant data protection regulations
+- Maintain comprehensive logs of AI data interactions
+- Annual third-party compliance audits
+
+4. Data Security Protocols
+- Multi-factor authentication for AI system access
+- End-to-end encryption for all data transfers
+- Regular security vulnerability assessments
+
+5. Employee Training
+- Mandatory annual training on AI ethics and data handling
+- Clear guidelines on responsible AI usage
+- Reporting mechanisms for potential misuse
+
+Last Updated: Q2 2025
+Approved by: Presidio Executive Board
